@@ -1,0 +1,20 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Character Controllers\Sources\Scripts\LookAtTarget.cs">
+    <Files>
+      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\LookAtTarget.cs" Line="38" Column="48" />
+      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Scripts\Combat\EnemyAI.cs" Line="42" Column="39" />
+      <File FileName="Assets\Standard Assets\Scripts\Combat\EnemyAttack.cs" Line="14" Column="15" />
+      <File FileName="Assets\Standard Assets\Scripts\Combat\PlayerHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Scripts\Combat\PlayerAttack.cs" Line="35" Column="28" />
+      <File FileName="Assets\Standard Assets\Scripts\Combat\Targetting.cs" Line="97" Column="17" />
+      <File FileName="Assets\Standard Assets\Scripts\Combat\LightHeal.cs" Line="39" Column="5" />
+      <File FileName="Assets\Standard Assets\Scripts\Combat\EnemyHealth.cs" Line="30" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
