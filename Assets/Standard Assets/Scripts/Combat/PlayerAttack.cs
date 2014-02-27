@@ -14,7 +14,7 @@ public class PlayerAttack : MonoBehaviour
 	void Start () 
 	{
 		attackTimer = 0;
-		coolDown = 2.0f;
+		coolDown = 1.0f;
 	}
 	
 	// Update is called once per frame
@@ -36,8 +36,9 @@ public class PlayerAttack : MonoBehaviour
 			}
 		}
 		
-		if(Input.GetKey (KeyCode.E))
+		if(Input.GetKeyUp (KeyCode.E))
 		{
+			Defend();
 			defending = true;
 		}
 		else defending = false;
@@ -61,6 +62,16 @@ public class PlayerAttack : MonoBehaviour
 				eh.AdjustHealth (-10);
 			}
 		}
+	}
+
+	private void Defend()
+	{
+		Vector3 dir = (target.transform.position - transform.position).normalized;
+		
+		float direction = Vector3.Dot (dir, transform.forward);
+
+
+		transform.position += transform.forward * -2;
 	}
 	
 }

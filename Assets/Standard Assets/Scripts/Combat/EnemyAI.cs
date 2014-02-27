@@ -23,6 +23,8 @@ public class EnemyAI : MonoBehaviour {
 		
 		target = go.transform;
 
+		myTransform.renderer.material.color = Color.blue;
+
 	}
 	
 	// Update is called once per frame

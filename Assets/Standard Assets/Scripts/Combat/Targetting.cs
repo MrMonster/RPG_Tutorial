@@ -69,7 +69,7 @@ public class Targetting : MonoBehaviour {
 	
 	private void SelectTarget()
 	{
-		selectedTarget.renderer.material.color = Color.red;
+		selectedTarget.renderer.material.color = Color.green;
 		
 		PlayerAttack pa = (PlayerAttack)GetComponent("PlayerAttack");
 		
@@ -100,8 +100,16 @@ public class Targetting : MonoBehaviour {
 				{
 					EnemyHealth ehit = (EnemyHealth)targets[i].GetComponent("EnemyHealth");
 					ehit.isTargetted = false;
+					targets[i].renderer.material.color = Color.blue;
 				}
 			}
+		}
+
+		if(Input.GetKeyDown(KeyCode.LeftShift))
+		{
+			EnemyHealth ehit = (EnemyHealth)targets[0].GetComponent("EnemyHealth");
+			ehit.isTargetted = false;
+			DeselectTarget();
 		}
 
 		if(eh.curHealth == 0)
